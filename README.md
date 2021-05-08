@@ -1,4 +1,5 @@
-## Client application using react, apollo3 and github graphql api
+
+# Client application using react, apollo3 and github graphql api
 
 ### Features
 
