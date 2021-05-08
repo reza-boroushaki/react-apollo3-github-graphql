@@ -1,0 +1,52 @@
+@import '../../helpers/helpers';
+
+.issues_page{
+    .lists{
+        display: grid;
+        grid-template-columns: 25px auto 35px;
+        border-bottom: 1px var(--border-color) solid;
+        &:hover{
+            background-color: var(--secondary-bg);
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+        &_state_icon{
+            .fa-exclamation{
+                width: 15px;
+                height: 15px;
+                font-size: 8px;
+            }
+            .fa-exclamation.open{
+                @include exclamation_icon(var(--main-green));            
+            }
+            .fa-exclamation.closed{
+                @include exclamation_icon(var(--main-red));
+            }
+        }
+        &_title_container{
+            a{
+                color: var(--text-primary);
+                text-decoration: none;
+                font-weight: bold;
+                &:hover{
+                    color: var(--main-blue);
+                }
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 12px;
+                color: var(--text-secondary);
+                margin-top: 6px;
+            }
+        }
+        &_comments{
+            margin-left: auto;
+            font-size: 12px;
+            b{
+                margin-left: 5px;
+
+            }
+        }
+    }
+}

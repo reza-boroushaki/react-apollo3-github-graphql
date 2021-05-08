@@ -1,0 +1,13 @@
+nav{
+    background-color: var(--primary-bg);
+    text-align: center;
+    @media (min-width: 1024px) {
+        text-align: left;
+    }
+    padding: 10px 5vw;
+    #logo{
+        font-size: 40px;
+        text-decoration: none;
+        color: #fff;
+    }
+}

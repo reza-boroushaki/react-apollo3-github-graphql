@@ -1,0 +1,11 @@
+.clear_filter{
+    color: var(--text-secondary);
+    display: none;
+    cursor: pointer;
+    b{
+        font-size: 14px;
+    }
+    &.show{
+        display: block;
+    }
+}

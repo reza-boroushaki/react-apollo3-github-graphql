@@ -1,0 +1,9 @@
+@mixin exclamation_icon($color){
+    border: 2px $color solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 100%;
+    color: $color;
+}

@@ -1,0 +1,17 @@
+.lists{
+    &.reactions{
+        border-top: 1px var(--border-color) solid;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        span{                
+            padding: 10px 15px 10px 0;
+            display: inline-block;
+            border-right: 1px var(--border-color) solid;
+            b{
+                font-weight: 400;
+                color: var(--main-blue);
+                margin-left: 10px;
+            }
+        }
+    }
+}

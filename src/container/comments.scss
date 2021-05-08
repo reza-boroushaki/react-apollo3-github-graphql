@@ -1,0 +1,43 @@
+.comment_state{
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.comment_author{
+    position: relative;
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        left: -9px;
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; 
+        border-right:10px solid var(--secondary-bg); 
+        display: none;
+        @media (min-width: 1024px){
+            display: block;
+        }
+    }
+    &::before{
+        left: -10px;
+        border-right:10px solid var(--border-color); 
+    }
+    h2{
+        font-size: 14px;
+    }
+    .authorAvatar{
+        width: 40px;
+        border-radius: 100%;
+        margin-right: 10px;
+        @media (min-width: 1024px){
+            position: absolute;
+            left: calc(-40px - 20px);
+        }
+    }
+}

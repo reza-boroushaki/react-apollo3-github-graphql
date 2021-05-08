@@ -1,0 +1,13 @@
+.load_more_button{
+    width: 100%;
+    display: block;
+    background-color: var(--main-green);
+    color: #fff;
+    font-size: 14px;
+    border: 1px var(--main-green) solid;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
